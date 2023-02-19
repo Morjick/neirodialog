@@ -1,0 +1,147 @@
+.product-list-header {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin: 0 15px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 30px;
+    }
+  }
+}
+
+.product-list-body {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
+
+    overflow: hidden;
+    padding: 15px 0;
+    border-bottom: 1px dashed #000;
+    transition: all .8s;
+
+    &.removed {
+      background: $colorDanger;
+      opacity: 0;
+    }
+
+    &.kill {
+      max-height: 0px;
+      padding: 0;
+    }
+
+    span {
+      margin: 0 15px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-id {
+      width: 40px;
+    }
+
+    &-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 150px;
+      height: 90px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-name {
+      width: 100%;
+    }
+  }
+}
+
+.product-create-header {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.product-create-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 8px;
+  border: 4px dashed $borderAlternative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  p {
+    color: $borderAlternative;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.product-create-main-info {
+  width: 300px;
+  margin-left: 100px;
+
+  section {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.avatar-input {
+  display: none;
+}
+
+.product-create-body {
+  margin: 30px 0;
+}
+
+.prodict-row {
+  display: flex;
+  
+  font-size: 18px;
+  margin: 15px 0;
+
+  span {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  .ui-select {
+    margin-left: 20px;
+  }
+}
+
+.lol-case {
+  min-height: 1000vh;
+}

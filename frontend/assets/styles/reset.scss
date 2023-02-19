@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  color: $dark;
+  list-style-type: none;
+  background: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body {
+  background: #f8f8f8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  position: relative;
+  height: 100%;
+}
+.App {
+  position: relative;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+  text-align: center;
+}
+
+router-link {
+  cursor: pointer;
+}
+
+section {
+  position: relative;
+  margin: 80px 0;
+  width: 100%;
+
+  @media (max-width: $mobilescreen) {
+    margin: 60px 0;
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 44px;
+  margin: 20px auto;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 20px auto;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+img {
+  pointer-events: none;
+}
+
+.event {
+  pointer-events: all;
+}
+
+strong, i, u {
+  color: inherit;
+}
+
+u {
+  text-decoration: underline;
+}
+
+p a {
+  color: $basic;
+  border-bottom: 2px solid $basic;
+}

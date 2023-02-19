@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  outline: none;
+  color: $color;
+  padding: 0;
+	margin: 0;
+  list-style-type: none;
+}
+
+input {
+  border: none;
+
+  &::placeholder {
+    color: $color;
+    font-size: 18px;
+    opacity: .8;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 15px 0;
+}
+
+h1 {
+	font-size: 30px;
+}

@@ -1,0 +1,49 @@
+.shop-body {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 20px 0;
+}
+
+.shop-filter-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  padding: 30px 20px;
+  box-shadow: 0 0 5px 1px $basic;
+  border-radius: 4px;
+
+  section {
+    margin: 20px 0;
+  }
+}
+
+.only-discount {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 1px $basic;
+  padding: 10px;
+
+  input {
+    width: 20px;
+    height: 20;
+    margin-right: 10px;
+  }
+}
+
+.reset-filter {
+  margin-left: auto;
+  
+  button {
+    color: $basic;
+    // font-weight: bold;
+    font-size: 18px;
+    height: auto;
+    padding: 0;
+  }
+}

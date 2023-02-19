@@ -1,0 +1,39 @@
+.ui-summ-range {
+  display: flex;
+  align-items: center;
+
+  width: 250px;
+  height: 40px;
+
+  border: 2px solid $basic;
+  border-radius: 4px;
+
+  input {
+    width: 50%;
+    height: 100%;
+    padding: 0 10px;
+
+    &:first-child {
+      border-right: 1px solid $basic;
+    }
+  }
+}
+
+.ui-summ-range-header {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 18px;
+  }
+
+  input {
+    width: 100px;
+    
+    color: $basic;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    border-bottom: 1px solid $basic;
+  }
+}

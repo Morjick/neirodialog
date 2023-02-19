@@ -1,0 +1,44 @@
+.tost-section {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+
+  width: 350px;
+}
+
+.tost {
+  width: 100%;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  transition: all .4s;
+  opacity: 0;
+  transform: translateY(-50px);
+  background: $colorHelper;
+  color: $colorTheme;
+
+  p {
+    color: $colorTheme;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.ok {
+    box-shadow: 0 0 5px 3px $colorPrimery;
+  }
+
+  &.warning {
+    box-shadow: 0 0 5px 3px $colorWarning;
+  }
+
+  &.danger {
+    box-shadow: 0 0 5px 3px $colorDanger;
+  }
+}

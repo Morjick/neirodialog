@@ -1,0 +1,19 @@
+{
+  "name": "neirodialog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:dev": "npm run start:dev --prefix backend",
+    "client:dev": "npm run dev --prefix frontend",
+    "admin:dev": "npm run dev --prefix admin",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\" \"npm run admin:dev\""
+  },
+  "author": "Morjick <matvey-khramov@inbox.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.20"
+  }
+}

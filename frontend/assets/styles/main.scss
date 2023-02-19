@@ -1,0 +1,64 @@
+$mobilescreen: 400px;
+
+// basic color
+$basic: #1071FF;
+$main-color: $basic;
+$alternative: #95C1FF;
+$state: #FF7E27;
+$contrast: #FF4E00;
+$font: #0C0C0C;
+$trash: #3C4852;
+$dark: #202020;
+$dark-gray: #E9E9E9;
+$placeholder: #737B7D;
+
+// working colors
+$cool: #66B87A;
+$danger: #FF4B55;
+$accent: #FFCC80; 
+
+// Fifty Shades of Grey
+$light: #E6EFFB;
+$background: #fff;
+$platinum: #EAECEE;
+$gray: #F6F8FB;
+$white: #fff;
+$darkenGray: #E3E3E3;
+$extraDarkGray: #737B7D;
+
+// permissions screen
+$mobilescreen: 320px;
+$landscape: 768px;
+$netbooks: 1024px;
+$monitor: 1280px;
+$fullscreen: 1440px;
+
+// fonts weight
+$font-thin: 100;
+$font-extralight: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 600;
+
+// font size
+$font-baby: 8px;
+$font-scription: 12px;
+$font-normal: 16px;
+$font-accent: 20px;
+$font-title: 24px;
+$font-extratitle: 32px;
+
+.default-content {
+  max-width: 1400px;
+  width: 100%;
+
+  margin: 60px auto 0;
+}
+
+@import "./reset";
+@import "./colors";
+@import "./generateClass";
+@import "./header";
+@import "./ui/ui";
+@import "./pages/pages";

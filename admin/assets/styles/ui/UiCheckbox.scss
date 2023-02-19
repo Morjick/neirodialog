@@ -1,0 +1,43 @@
+.ui-checkbox {
+  height: 40px;
+
+  border-radius: 5px;
+  overflow: hidden;
+  background: $backgroundBasic;
+  box-shadow: 0 0 5px 0 $borderAlternative;
+  padding: 15px 10px;
+  cursor: pointer;
+
+  label {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+  }
+}
+
+.ui-checkbox-item {
+  position: relative;
+  
+  width: 25px;
+  height: 25px;
+
+  box-shadow: 0 0 5px 0 $main;
+  border-radius: 4px;
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  &--checked {
+    background: $main;
+  }
+}
+
+.ui-checkbox-label {
+  margin-left: 15px;
+  color: $placeholder;
+  font-size: 17px;
+  cursor: pointer;
+}

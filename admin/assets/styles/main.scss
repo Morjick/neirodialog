@@ -1,0 +1,40 @@
+:root {
+  --bacground: #1E293B;
+  --backgroundAlternative: #0F172A;
+  --backgroundBasic: #fff;
+  --main: #4F46E5;
+  --mainLight: #6366F1;
+  --border: #6366F1;
+  --borderAlternative: #475569;
+  --color: #202020;
+  --colorDanger: #f04124;
+  --colorPrimery: #34C759;
+  --colorWarning: #FFBF00;
+  --colorAlternative: #fff;
+  --colorHelper: #64748B;
+  --colorTheme: #F1F5F9;
+  --placeholder: rgba(20, 20, 20, .8);
+}
+
+$bacground: var(--bacground);
+$backgroundAlternative: var(--backgroundAlternative);
+$backgroundBasic: var(--backgroundBasic);
+$main: var(--main);
+$mainLight: var(--mainLight);
+$border: var(--border);
+$borderAlternative: var(--borderAlternative);
+$color: var(--color);
+$colorDanger: var(--colorDanger);
+$colorWarning: var(--colorWarning);
+$colorPrimery: var(--colorPrimery);
+$colorAlternative: var(--colorAlternative);
+$colorHelper: var(--colorHelper);
+$colorTheme: var(--colorTheme);
+$placeholder: var(--placeholder);
+
+@import "./vars/reset";
+@import "./vars/vars";
+@import "./layouts/layouts";
+@import "./ui/ui";
+@import "./pages/pages";
+@import "./global/global";
